@@ -12,6 +12,7 @@ function ApexChartBar2() {
       bar: {
         borderRadius: 4,
         horizontal: true,
+        distributed: true
       }
     },
     dataLabels: {
@@ -22,17 +23,17 @@ function ApexChartBar2() {
       xaxis: {
         lines: {
           show: true  //or just here to disable only x axis grids
-         }
-       },    
+        }
+      },
     },
     xaxis: {
       categories: ['South Korea', 'Canada', 'United Kingdom', 'Netherlands', 'Italy', 'France', 'Japan',
         'United States', 'China', 'Germany'
       ],
     },
-    colors: ['#F44336', '#E91E63', '#9C27B0']
+    colors: ['#BAB1E3', '#0BE789', '#EDFF3C', '#F037B0']
   });
-  
+
   const [series, setSeries] = useState([{
     data: [400, 430, 448, 470, 540, 580, 690, 1100, 1200, 1380],
   }]);
